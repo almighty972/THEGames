@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/inappRootLayout"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp"
+        android:background="@color/yellow01"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/inappLifeCountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="25"/>
+
+        <ImageView
+            android:id="@+id/inappImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_favorite"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/inappCostTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="GRATUIT"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/inAppSmallDescTextTview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+vendu"
+        android:layout_below="@+id/inappRootLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"/>
+
+</RelativeLayout>

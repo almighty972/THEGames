@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- First row pad -->
+    <LinearLayout
+        android:id="@+id/firstRowPadLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/key1Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            style="@style/ButtonPadWithRightSpacing"/>
+
+        <Button
+            android:id="@+id/key2Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            style="@style/ButtonPadWithRightSpacing"/>
+
+        <Button
+            android:id="@+id/key3Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            style="@style/ButtonPadWithRightSpacing"/>
+
+        <Button
+            android:id="@+id/key4Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            style="@style/ButtonPad"/>
+
+    </LinearLayout>
+
+    <!-- Second row pad -->
+    <LinearLayout
+        android:id="@+id/secondRowPadLinearLayout"
+        android:layout_below="@+id/firstRowPadLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pad_right_spacing"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/key5Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            style="@style/ButtonPadWithRightSpacing"/>
+
+        <Button
+            android:id="@+id/key6Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            style="@style/ButtonPadWithRightSpacing"/>
+
+        <Button
+            android:id="@+id/key7Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            style="@style/ButtonPadWithRightSpacing"/>
+
+        <Button
+            android:id="@+id/key8Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            style="@style/ButtonPad"/>
+
+    </LinearLayout>
+
+    <!-- Third row pad -->
+    <LinearLayout
+        android:id="@+id/thirdRowPadLinearLayout"
+        android:layout_below="@+id/secondRowPadLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pad_right_spacing"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/key9Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            style="@style/ButtonPadWithRightSpacing"/>
+
+        <Button
+            android:id="@+id/key0Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            style="@style/ButtonPadWithRightSpacing"/>
+
+        <RelativeLayout
+            android:id="@+id/keyJokerButton"
+            android:layout_width="65dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="8dp"
+            style="@style/JokerButtonPad">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"/>
+
+
+            <TextView
+                style="@style/JokerButtonPadTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="6dp"
+                android:text="-10"/>
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/keyOkButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            style="@style/ButtonPad"/>
+
+    </LinearLayout>
+</RelativeLayout>

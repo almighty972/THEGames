@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.Base">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="ButtonPad">
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/selector_num_pad</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="ButtonPadWithRightSpacing" parent="ButtonPad">
+        <item name="android:layout_marginRight">@dimen/pad_right_spacing</item>
+    </style>
+
+    <style name="JokerButtonPad">
+        <item name="android:background">@drawable/selector_joker_num_pad</item>
+    </style>
+
+    <style name="JokerButtonPadTextStyle">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="AnswerField">
+        <item name="android:textColor">@color/blue01</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/shape_answer_field</item>
+    </style>
+
+    <style name="MenuEntry">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:background">@drawable/selector_menu_item</item>
+    </style>
+
+    <style name="PopupButton">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/selector_popup_button</item>
+    </style>
+
+    <style name="RedPopupButton" parent="PopupButton">
+        <item name="android:background">@drawable/selector_red_popup_button</item>
+    </style>
+
+    <style name="GreenPopupButton" parent="PopupButton">
+        <item name="android:background">@drawable/selector_green_popup_button</item>
+    </style>
+
+
+</resources>

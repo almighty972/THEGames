@@ -1,0 +1,1580 @@
+[
+    {
+        "question": "L'équipe de France de football est championne du monde",
+        "answer": 1998,
+        "jokermini": 1990,
+        "jokermaxi": 2000,
+        "level": 1,
+        "format": 0
+    },
+    {
+        "question": "François Hollande devient président de la République",
+        "answer": 2012,
+        "jokermini": 2009,
+        "jokermaxi": 2014,
+        "level": 2,
+        "format": 0
+    },
+    {
+        "question": "6 X 7 = ?",
+        "answer": 42,
+        "jokermini": 40,
+        "jokermaxi": 45,
+        "level": 3,
+        "format": 0
+    },
+    {
+        "question": "Quel est le nombre \"Ten\" en anglais?",
+        "answer": 10,
+        "jokermini": 8,
+        "jokermaxi": 13,
+        "level": 4,
+        "format": 0
+    },
+    {
+        "question": "Combien de joueurs y a-t-il par équipe au football?",
+        "answer": 11,
+        "jokermini": 7,
+        "jokermaxi": 12,
+        "level": 5,
+        "format": 0
+    },
+    {
+        "question": "En quelle année est mort Steve Jobs (Apple) ?",
+        "answer": 2011,
+        "jokermini": 2009,
+        "jokermaxi": 2014,
+        "level": 6,
+        "format": 0
+    },
+    {
+        "question": "Taille de Jean Dujardin",
+        "answer": 182,
+        "jokermini": 180,
+        "jokermaxi": 190,
+        "level": 7,
+        "unit": "cm",
+        "format": 0
+    },
+    {
+        "question": "Date de sortie du film Titanic",
+        "answer": 1998,
+        "jokermini": 1990,
+        "jokermaxi": 2000,
+        "level": 8,
+        "format": 0
+    },
+    {
+        "question": "Prise de la Bastille",
+        "answer": 1789,
+        "jokermini": 1779,
+        "jokermaxi": 1800,
+        "level": 9,
+        "format": 0
+    },
+    {
+        "question": "Taille de la tour Eiffel",
+        "answer": 300,
+        "jokermini": 275,
+        "jokermaxi": 330,
+        "level": 10,
+        "unit": "m",
+        "format": 0
+    },
+    {
+        "question": "Département: Yvelines (Versailles)",
+        "answer": 78,
+        "jokermini": 75,
+        "jokermaxi": 80,
+        "level": 11,
+        "format": 0
+    },
+    {
+        "question": "Âge de Claude François au moment du décès",
+        "answer": 39,
+        "jokermini": 35,
+        "jokermaxi": 40,
+        "level": 12,
+        "unit": "ans",
+        "format": 0
+    },
+    {
+        "question": "Année de sortie de la Peugeot 207",
+        "answer": 2006,
+        "jokermini": 2005,
+        "jokermaxi": 2010,
+        "level": 13,
+        "format": 0
+    },
+    {
+        "question": "1 hectare = combien de mètres carré?",
+        "answer": 10000,
+        "jokermini": 5000,
+        "jokermaxi": 15000,
+        "level": 14,
+        "format": 1
+    },
+    {
+        "question": "Distance entre Paris et Lille (par la route)",
+        "answer": 219,
+        "jokermini": 210,
+        "jokermaxi": 220,
+        "level": 15,
+        "unit": "Km",
+        "format": 0
+    },
+    {
+        "question": "45 x 5 = ?",
+        "answer": 225,
+        "jokermini": 210,
+        "jokermaxi": 230,
+        "level": 16,
+        "format": 0
+    },
+    {
+        "question": "1 année bissextile = combien de jours?",
+        "answer": 366,
+        "jokermini": 363,
+        "jokermaxi": 367,
+        "level": 17,
+        "format": 0
+    },
+    {
+        "question": "Âge de George Clooney",
+        "answer": 53,
+        "jokermini": 50,
+        "jokermaxi": 55,
+        "level": 18,
+        "unit": "ans",
+        "format": 0
+    },
+    {
+        "question": "Christophe Colomb découvre l'Amérique",
+        "answer": 1492,
+        "jokermini": 1490,
+        "jokermaxi": 1495,
+        "level": 19,
+        "format": 0
+    },
+    {
+        "question": "Département: Hérault (Montpellier)",
+        "answer": 34,
+        "jokermini": 30,
+        "jokermaxi": 35,
+        "level": 20,
+        "format": 0
+    },
+    {
+        "question": "Date de sortie du film \"Avatar\"",
+        "answer": 2009,
+        "jokermini": 2000,
+        "jokermaxi": 2010,
+        "level": 21,
+        "format": 0
+    },
+    {
+        "question": "Taille d'Adriana Karembeu",
+        "answer": 185,
+        "jokermini": 175,
+        "jokermaxi": 192,
+        "level": 22,
+        "unit": "cm",
+        "format": 0
+    },
+    {
+        "question": "Chute du mur de Berlin",
+        "answer": 1989,
+        "jokermini": 1979,
+        "jokermaxi": 1995,
+        "level": 23,
+        "format": 0
+    },
+    {
+        "question": "12 x 15 = ?",
+        "answer": 180,
+        "jokermini": 160,
+        "jokermaxi": 185,
+        "level": 24,
+        "format": 0
+    },
+    {
+        "question": "Année de Adoption de la loi sur le divorce par consentement mutuel",
+        "answer": 1975,
+        "jokermini": 1970,
+        "jokermaxi": 1980,
+        "level": 25,
+        "format": 0
+    },
+    {
+        "question": "Taille de Johnny Hallyday",
+        "answer": 185,
+        "jokermini": 180,
+        "jokermaxi": 190,
+        "level": 26,
+        "unit": "cm",
+        "format": 0
+    },
+    {
+        "question": "Nombre de planètes dans le Système solaire",
+        "answer": 8,
+        "jokermini": 5,
+        "jokermaxi": 10,
+        "level": 27,
+        "format": 0
+    },
+    {
+        "question": "Année de sortie de la Renault Clio I",
+        "answer": 1990,
+        "jokermini": 1989,
+        "jokermaxi": 1995,
+        "level": 28,
+        "format": 0
+    },
+    {
+        "question": "1 jour = combien de minutes?",
+        "answer": 1440,
+        "jokermini": 1430,
+        "jokermaxi": 1445,
+        "level": 29,
+        "format": 1
+    },
+    {
+        "question": "Nombre de députés à l'Assemblée Nationale (2014)",
+        "answer": 577,
+        "jokermini": 570,
+        "jokermaxi": 580,
+        "level": 30,
+        "format": 0
+    },
+    {
+        "question": "Nombre de calories pour 100g de Nutella",
+        "answer": 544,
+        "jokermini": 540,
+        "jokermaxi": 550,
+        "level": 31,
+        "unit": "kcal",
+        "format": 0
+    },
+    {
+        "question": "Date de création de Canal +",
+        "answer": 1984,
+        "jokermini": 1980,
+        "jokermaxi": 1985,
+        "level": 32,
+        "format": 0
+    },
+    {
+        "question": "Année de sortie de la Citroën C3",
+        "answer": 2002,
+        "jokermini": 2000,
+        "jokermaxi": 2005,
+        "level": 33,
+        "format": 0
+    },
+    {
+        "question": "Nombre de lettres dans l'alphabet français",
+        "answer": 26,
+        "jokermini": 25,
+        "jokermaxi": 30,
+        "level": 34,
+        "format": 0
+    },
+    {
+        "question": "Âge d'Eminem",
+        "answer": 41,
+        "jokermini": 40,
+        "jokermaxi": 45,
+        "level": 35,
+        "unit": "ans",
+        "format": 0
+    },
+    {
+        "question": "Nombre de joueurs dans une équipe de handball (sur le terrain)",
+        "answer": 7,
+        "jokermini": 5,
+        "jokermaxi": 10,
+        "level": 36,
+        "format": 0
+    },
+    {
+        "question": "Département: Finistère (Quimper)",
+        "answer": 29,
+        "jokermini": 25,
+        "jokermaxi": 30,
+        "level": 37,
+        "format": 0
+    },
+    {
+        "question": "Taille de Mimie Mathy",
+        "answer": 132,
+        "jokermini": 130,
+        "jokermaxi": 140,
+        "level": 38,
+        "unit": "cm",
+        "format": 0
+    },
+    {
+        "question": "Date de sortie du film \"Le grand bleu\"",
+        "answer": 1988,
+        "jokermini": 1980,
+        "jokermaxi": 1990,
+        "level": 39,
+        "format": 0
+    },
+    {
+        "question": "Inauguration du métro à Paris",
+        "answer": 1900,
+        "jokermini": 1895,
+        "jokermaxi": 1910,
+        "level": 40,
+        "format": 0
+    },
+    {
+        "question": "Distance entre Rouen et Saint-Etienne (par la route)",
+        "answer": 653,
+        "jokermini": 600,
+        "jokermaxi": 700,
+        "level": 41,
+        "unit": "km",
+        "format": 0
+    },
+    {
+        "question": "Age de Brigitte Bardot aujourd'hui (2014)",
+        "answer": 79,
+        "jokermini": 70,
+        "jokermaxi": 80,
+        "level": 42,
+        "unit": "ans",
+        "format": 0
+    },
+    {
+        "question": "Le nouveau franc entre en vigueur",
+        "answer": 1960,
+        "jokermini": 1959,
+        "jokermaxi": 1969,
+        "level": 43,
+        "format": 0
+    },
+    {
+        "question": "Date de sortie de \"Dirty Dancing\"",
+        "answer": 1987,
+        "jokermini": 1980,
+        "jokermaxi": 1990,
+        "level": 44,
+        "format": 0
+    },
+    {
+        "question": "Taille de Angelina Jolie",
+        "answer": 169,
+        "jokermini": 165,
+        "jokermaxi": 175,
+        "level": 45,
+        "unit": "cm",
+        "format": 0
+    },
+    {
+        "question": "Département: Alpes-Maritimes (Nice)",
+        "answer": 6,
+        "jokermini": 5,
+        "jokermaxi": 10,
+        "level": 46,
+        "format": 0
+    },
+    {
+        "question": "Âge de Paul Walker au moment du décès",
+        "answer": 40,
+        "jokermini": 39,
+        "jokermaxi": 45,
+        "level": 47,
+        "unit": "ans",
+        "format": 0
+    },
+    {
+        "question": "Nombre de joueurs dans une équipe de basket-ball (sur le terrain)",
+        "answer": 5,
+        "jokermini": 4,
+        "jokermaxi": 10,
+        "level": 48,
+        "format": 0
+    },
+    {
+        "question": "Année de naissance de Sophie Marceau",
+        "answer": 1966,
+        "jokermini": 1965,
+        "jokermaxi": 1970,
+        "level": 49,
+        "format": 0
+    },
+    {
+        "question": "Durée du film Avatar",
+        "answer": 178,
+        "jokermini": 170,
+        "jokermaxi": 180,
+        "level": 50,
+        "unit": "min.",
+        "format": 0
+    },
+    {
+        "question": "Début de la construction du Stade de France",
+        "answer": 1995,
+        "jokermini": 1994,
+        "jokermaxi": 1998,
+        "level": 51,
+        "format": 0
+    },
+    {
+        "question": "Année de mariage de Tony Parker et Eva Longoria",
+        "answer": 2007,
+        "jokermini": 2005,
+        "jokermaxi": 2010,
+        "level": 52,
+        "format": 0
+    },
+    {
+        "question": "40 kilogrammes = combien d'hectogrammes?",
+        "answer": 400,
+        "jokermini": 400,
+        "jokermaxi": 500,
+        "level": 53,
+        "format": 0
+    },
+    {
+        "question": "Distance entre Paris et Lyon (par la route) ",
+        "answer": 465,
+        "jokermini": 460,
+        "jokermaxi": 470,
+        "level": 54,
+        "unit": "Km",
+        "format": 0
+    },
+    {
+        "question": "7 x 9 = ?",
+        "answer": 63,
+        "jokermini": 60,
+        "jokermaxi": 70,
+        "level": 55,
+        "format": 0
+    },
+    {
+        "question": "Département: Pas-de-Calais (Arras)",
+        "answer": 62,
+        "jokermini": 60,
+        "jokermaxi": 65,
+        "level": 56,
+        "format": 0
+    },
+    {
+        "question": "Taille de Brad Pitt",
+        "answer": 180,
+        "jokermini": 175,
+        "jokermaxi": 183,
+        "level": 57,
+        "unit": "cm",
+        "format": 0
+    },
+    {
+        "question": "Date de sortie de Matrix",
+        "answer": 1999,
+        "jokermini": 1990,
+        "jokermaxi": 2000,
+        "level": 58,
+        "format": 0
+    },
+    {
+        "question": "L’âge de la majorité est abaissé à 18 ans",
+        "answer": 1974,
+        "jokermini": 1970,
+        "jokermaxi": 1980,
+        "level": 59,
+        "format": 0
+    },
+    {
+        "question": "Taille de Zlatan Ibrahimovic",
+        "answer": 195,
+        "jokermini": 190,
+        "jokermaxi": 205,
+        "level": 60,
+        "unit": "cm",
+        "format": 0
+    },
+    {
+        "question": "Département: Calvados (Caen)",
+        "answer": 14,
+        "jokermini": 10,
+        "jokermaxi": 15,
+        "level": 61,
+        "format": 0
+    },
+    {
+        "question": "Record de vitesse (homologué) de service au tennis",
+        "answer": 251,
+        "jokermini": 250,
+        "jokermaxi": 260,
+        "level": 62,
+        "unit": "Km/h",
+        "format": 0
+    },
+    {
+        "question": "Âge de Beyoncé",
+        "answer": 32,
+        "jokermini": 30,
+        "jokermaxi": 35,
+        "level": 63,
+        "unit": "ans",
+        "format": 0
+    },
+    {
+        "question": "Début de la construction de la Tour Eiffel",
+        "answer": 1887,
+        "jokermini": 1885,
+        "jokermaxi": 1890,
+        "level": 64,
+        "format": 0
+    },
+    {
+        "question": "Date de mariage de Nicolas Sarkozy et Carla Bruni",
+        "answer": 2008,
+        "jokermini": 2005,
+        "jokermaxi": 2010,
+        "level": 65,
+        "format": 0
+    },
+    {
+        "question": "Largeur d'un terrain de basket-ball",
+        "answer": 15,
+        "jokermini": 14,
+        "jokermaxi": 19,
+        "level": 66,
+        "unit": "m",
+        "format": 0
+    },
+    {
+        "question": "Année de production de la Volkswagen Coccinelle",
+        "answer": 1938,
+        "jokermini": 1935,
+        "jokermaxi": 1940,
+        "level": 67,
+        "format": 0
+    },
+    {
+        "question": "Date d'ouverture du Futuroscope",
+        "answer": 1987,
+        "jokermini": 1980,
+        "jokermaxi": 1990,
+        "level": 68,
+        "format": 0
+    },
+    {
+        "question": "25 000 kilogrammes = combien de tonnes?",
+        "answer": 25,
+        "jokermini": 25,
+        "jokermaxi": 250,
+        "level": 69,
+        "format": 0
+    },
+    {
+        "question": "Distance entre Lille et Strasbourg (par la route)",
+        "answer": 521,
+        "jokermini": 510,
+        "jokermaxi": 252,
+        "level": 70,
+        "unit": "Km",
+        "format": 0
+    },
+    {
+        "question": "120 x 11 = ?",
+        "answer": 1320,
+        "jokermini": 1300,
+        "jokermaxi": 1331,
+        "level": 71,
+        "format": 1
+    },
+    {
+        "question": "Département: Seine-Maritime (Rouen)",
+        "answer": 76,
+        "jokermini": 75,
+        "jokermaxi": 80,
+        "level": 72,
+        "format": 0
+    },
+    {
+        "question": "Record du monde de vitesse sur rail (SNCF en 2007)",
+        "answer": 574,
+        "jokermini": 570,
+        "jokermaxi": 580,
+        "level": 73,
+        "unit": "Km/h",
+        "format": 0
+    },
+    {
+        "question": "Tournois Roland-Garros gagnés par Rafael Nadal",
+        "answer": 8,
+        "jokermini": 5,
+        "jokermaxi": 10,
+        "level": 74,
+        "format": 0
+    },
+    {
+        "question": "Âge d'Elvis Presley au moment du décès",
+        "answer": 42,
+        "jokermini": 40,
+        "jokermaxi": 45,
+        "level": 75,
+        "unit": "ans",
+        "format": 0
+    },
+    {
+        "question": "Âge d'Omar Sy",
+        "answer": 36,
+        "jokermini": 35,
+        "jokermaxi": 40,
+        "level": 76,
+        "unit": "ans",
+        "format": 0
+    },
+    {
+        "question": "Date de construction du mur de Berlin",
+        "answer": 1961,
+        "jokermini": 1960,
+        "jokermaxi": 1965,
+        "level": 77,
+        "format": 0
+    },
+    {
+        "question": "Largeur (officielle) d'un terrain de football",
+        "answer": 68,
+        "jokermini": 65,
+        "jokermaxi": 70,
+        "level": 78,
+        "unit": "m",
+        "format": 0
+    },
+    {
+        "question": "Année de sortie de la Peugeot 206",
+        "answer": 1998,
+        "jokermini": 1995,
+        "jokermaxi": 2000,
+        "level": 79,
+        "format": 0
+    },
+    {
+        "question": "Date de création de la chaîne M6",
+        "answer": 1987,
+        "jokermini": 1985,
+        "jokermaxi": 1990,
+        "level": 80,
+        "format": 0
+    },
+    {
+        "question": "4 kilogrammes = combien de milligrammes?",
+        "answer": 4000000,
+        "jokermini": 400000,
+        "jokermaxi": 4000000,
+        "level": 81,
+        "format": 1
+    },
+    {
+        "question": "Distance entre Paris et Milan (par la route)",
+        "answer": 850,
+        "jokermini": 840,
+        "jokermaxi": 855,
+        "level": 82,
+        "unit": "Km",
+        "format": 0
+    },
+    {
+        "question": "Taille de Nicolas Sarkozy",
+        "answer": 165,
+        "jokermini": 160,
+        "jokermaxi": 175,
+        "level": 83,
+        "unit": "cm",
+        "format": 0
+    },
+    {
+        "question": "Date de sortie du film \"Scarface\"",
+        "answer": 1984,
+        "jokermini": 1980,
+        "jokermaxi": 1990,
+        "level": 84,
+        "format": 0
+    },
+    {
+        "question": "Date de l'inauguration du tunnel sous la Manche",
+        "answer": 1994,
+        "jokermini": 1990,
+        "jokermaxi": 2000,
+        "level": 85,
+        "format": 0
+    },
+    {
+        "question": "Département: Eure (Évreux)",
+        "answer": 27,
+        "jokermini": 25,
+        "jokermaxi": 30,
+        "level": 86,
+        "format": 0
+    },
+    {
+        "question": "Âge de Michael Jackson au moment du décès",
+        "answer": 50,
+        "jokermini": 45,
+        "jokermaxi": 53,
+        "level": 87,
+        "unit": "ans",
+        "format": 0
+    },
+    {
+        "question": "Longueur (officielle) d'un terrain de football",
+        "answer": 105,
+        "jokermini": 100,
+        "jokermaxi": 115,
+        "level": 88,
+        "unit": "m",
+        "format": 0
+    },
+    {
+        "question": "Année de lancement de la Renault Twingo I",
+        "answer": 1993,
+        "jokermini": 1990,
+        "jokermaxi": 1995,
+        "level": 89,
+        "format": 0
+    },
+    {
+        "question": "2500 Decilitres = combien de litres?",
+        "answer": 250,
+        "jokermini": 25,
+        "jokermaxi": 250,
+        "level": 90,
+        "format": 0
+    },
+    {
+        "question": "Date de création de Chérie FM",
+        "answer": 1987,
+        "jokermini": 1980,
+        "jokermaxi": 1988,
+        "level": 91,
+        "format": 0
+    },
+    {
+        "question": "Distance entre Paris et Montpellier (par la route) ",
+        "answer": 748,
+        "jokermini": 740,
+        "jokermaxi": 750,
+        "level": 92,
+        "unit": "Km",
+        "format": 0
+    },
+    {
+        "question": "Âge de Jean-Paul Belmondo",
+        "answer": 81,
+        "jokermini": 80,
+        "jokermaxi": 85,
+        "level": 93,
+        "unit": "ans",
+        "format": 0
+    },
+    {
+        "question": "Nombre de naissances en France en 2013",
+        "answer": 780000,
+        "jokermini": 779000,
+        "jokermaxi": 781000,
+        "level": 94,
+        "format": 1
+    },
+    {
+        "question": "Nombre de calories pour 100g de M&m's",
+        "answer": 516,
+        "jokermini": 510,
+        "jokermaxi": 520,
+        "level": 95,
+        "unit": "kcal",
+        "format": 0
+    },
+    {
+        "question": "Département: Seine-Saint-Denis (Bobigny)",
+        "answer": 93,
+        "jokermini": 90,
+        "jokermaxi": 95,
+        "level": 96,
+        "format": 0
+    },
+    {
+        "question": "Nombre de femmes en France en 2014",
+        "answer": 52,
+        "jokermini": 50,
+        "jokermaxi": 55,
+        "level": 97,
+        "unit": "Pourcent",
+        "format": 0
+    },
+    {
+        "question": "Taille de Michael Jordan",
+        "answer": 198,
+        "jokermini": 195,
+        "jokermaxi": 205,
+        "level": 98,
+        "unit": "cm",
+        "format": 0
+    },
+    {
+        "question": "Date de sortie de \"Retour vers le futur\"",
+        "answer": 1985,
+        "jokermini": 1980,
+        "jokermaxi": 1990,
+        "level": 99,
+        "format": 0
+    },
+    {
+        "question": "Jeanne d'Arc est brulée à Rouen",
+        "answer": 1431,
+        "jokermini": 1430,
+        "jokermaxi": 1440,
+        "level": 100,
+        "format": 0
+    },
+    {
+        "question": "Les femmes acquièrent le droit de vote",
+        "answer": 1944,
+        "jokermini": 1939,
+        "jokermaxi": 1945,
+        "level": 101,
+        "format": 0
+    },
+    {
+        "question": "Date de naissance de François Hollande",
+        "answer": 1954,
+        "jokermini": 1945,
+        "jokermaxi": 1960,
+        "level": 102,
+        "format": 0
+    },
+    {
+        "question": "Date de sortie de Forrest Gump",
+        "answer": 1994,
+        "jokermini": 1985,
+        "jokermaxi": 1995,
+        "level": 103,
+        "format": 0
+    },
+    {
+        "question": "Département: Cantal (Aurillac)",
+        "answer": 15,
+        "jokermini": 14,
+        "jokermaxi": 19,
+        "level": 104,
+        "format": 0
+    },
+    {
+        "question": "Âge de Zlatan Ibrahimovic",
+        "answer": 32,
+        "jokermini": 30,
+        "jokermaxi": 35,
+        "level": 105,
+        "unit": "ans",
+        "format": 0
+    },
+    {
+        "question": "50 decilitres = combien de litres?",
+        "answer": 5,
+        "jokermini": 1,
+        "jokermaxi": 5,
+        "level": 106,
+        "format": 0
+    },
+    {
+        "question": "Date d'ouverture du Parc Astérix",
+        "answer": 1989,
+        "jokermini": 1985,
+        "jokermaxi": 1990,
+        "level": 107,
+        "format": 0
+    },
+    {
+        "question": "Distance entre Paris et Rome (par la route)",
+        "answer": 1431,
+        "jokermini": 1430,
+        "jokermaxi": 1440,
+        "level": 108,
+        "unit": "Km",
+        "format": 1
+    },
+    {
+        "question": "Durée du film Titanic",
+        "answer": 195,
+        "jokermini": 190,
+        "jokermaxi": 200,
+        "level": 109,
+        "unit": "min.",
+        "format": 0
+    },
+    {
+        "question": "Âge de Florence Foresti",
+        "answer": 40,
+        "jokermini": 39,
+        "jokermaxi": 45,
+        "level": 110,
+        "unit": "ans",
+        "format": 0
+    },
+    {
+        "question": "Record de vitesse aérien (avion sans pilote)",
+        "answer": 11144,
+        "jokermini": 11140,
+        "jokermaxi": 11150,
+        "level": 111,
+        "unit": "Km/h",
+        "format": 1
+    },
+    {
+        "question": "Département: Martinique (Fort-de-France)",
+        "answer": 972,
+        "jokermini": 970,
+        "jokermaxi": 975,
+        "level": 112,
+        "format": 0
+    },
+    {
+        "question": "Date de sortie du 1er chapitre de Twilight (film)",
+        "answer": 2009,
+        "jokermini": 2000,
+        "jokermaxi": 2010,
+        "level": 113,
+        "format": 0
+    },
+    {
+        "question": "Taille de Julia Roberts",
+        "answer": 175,
+        "jokermini": 174,
+        "jokermaxi": 180,
+        "level": 114,
+        "unit": "cm",
+        "format": 0
+    },
+    {
+        "question": "Département: Bouches-du-Rhône (Marseille)",
+        "answer": 13,
+        "jokermini": 10,
+        "jokermaxi": 15,
+        "level": 115,
+        "format": 0
+    },
+    {
+        "question": "Année de naissance de Gérard Depardieu",
+        "answer": 1948,
+        "jokermini": 1945,
+        "jokermaxi": 1950,
+        "level": 116,
+        "format": 0
+    },
+    {
+        "question": "Date de création de la radio NRJ",
+        "answer": 1981,
+        "jokermini": 1980,
+        "jokermaxi": 1985,
+        "level": 117,
+        "format": 0
+    },
+    {
+        "question": "3 mètres carré = combien de centimètres carré?",
+        "answer": 30000,
+        "jokermini": 3000,
+        "jokermaxi": 30000,
+        "level": 118,
+        "format": 1
+    },
+    {
+        "question": "Année de sortie du Renault Espace",
+        "answer": 1984,
+        "jokermini": 1980,
+        "jokermaxi": 1985,
+        "level": 119,
+        "format": 0
+    },
+    {
+        "question": "Département: Rhône (Lyon)",
+        "answer": 69,
+        "jokermini": 65,
+        "jokermaxi": 70,
+        "level": 120,
+        "format": 0
+    },
+    {
+        "question": "Âge de Gad Elmaleh",
+        "answer": 43,
+        "jokermini": 40,
+        "jokermaxi": 45,
+        "level": 121,
+        "unit": "ans",
+        "format": 0
+    },
+    {
+        "question": "1 heure = combien de secondes?",
+        "answer": 3600,
+        "jokermini": 3560,
+        "jokermaxi": 3600,
+        "level": 122,
+        "format": 1
+    },
+    {
+        "question": "Distance entre Paris et Berlin (par la route)",
+        "answer": 1048,
+        "jokermini": 1040,
+        "jokermaxi": 1050,
+        "level": 123,
+        "unit": "Km",
+        "format": 1
+    },
+    {
+        "question": "Date de création de la radio RFM",
+        "answer": 1981,
+        "jokermini": 1975,
+        "jokermaxi": 1982,
+        "level": 124,
+        "format": 0
+    },
+    {
+        "question": "Département: Loire (Saint-Étienne)",
+        "answer": 42,
+        "jokermini": 40,
+        "jokermaxi": 45,
+        "level": 125,
+        "format": 0
+    },
+    {
+        "question": "Date de sortie du film \"Il faut sauver le soldat Ryan\"",
+        "answer": 1998,
+        "jokermini": 1990,
+        "jokermaxi": 2000,
+        "level": 126,
+        "format": 0
+    },
+    {
+        "question": "Taille de Jacques Chirac",
+        "answer": 189,
+        "jokermini": 185,
+        "jokermaxi": 195,
+        "level": 127,
+        "unit": "cm",
+        "format": 0
+    },
+    {
+        "question": "Salaire de Lionel Messi annuel (2013)",
+        "answer": 16000000,
+        "jokermini": 15000000,
+        "jokermaxi": 18000000,
+        "level": 128,
+        "unit": "Eur.",
+        "format": 1
+    },
+    {
+        "question": "Département: Gard (Nîmes)",
+        "answer": 30,
+        "jokermini": 29,
+        "jokermaxi": 34,
+        "level": 129,
+        "format": 0
+    },
+    {
+        "question": "Âge de Dalida au moment du décès",
+        "answer": 54,
+        "jokermini": 50,
+        "jokermaxi": 60,
+        "level": 130,
+        "unit": "ans",
+        "format": 0
+    },
+    {
+        "question": "Longueur d'une table de tennis de table",
+        "answer": 274,
+        "jokermini": 270,
+        "jokermaxi": 275,
+        "level": 131,
+        "unit": "cm",
+        "format": 0
+    },
+    {
+        "question": "Année de sortie de la Peugeot 106",
+        "answer": 1991,
+        "jokermini": 1985,
+        "jokermaxi": 1992,
+        "level": 132,
+        "format": 0
+    },
+    {
+        "question": "Taille d'Eva Longoria",
+        "answer": 157,
+        "jokermini": 150,
+        "jokermaxi": 160,
+        "level": 133,
+        "unit": "cm",
+        "format": 0
+    },
+    {
+        "question": "Population en France en 2014",
+        "answer": 66000000,
+        "jokermini": 64000000,
+        "jokermaxi": 68000000,
+        "level": 134,
+        "unit": "hab.",
+        "format": 1
+    },
+    {
+        "question": "Âge de Franck Dubosc",
+        "answer": 50,
+        "jokermini": 49,
+        "jokermaxi": 55,
+        "level": 135,
+        "unit": "ans",
+        "format": 0
+    },
+    {
+        "question": "Distance entre Quimper et Marseille (par la route)",
+        "answer": 1216,
+        "jokermini": 1210,
+        "jokermaxi": 1220,
+        "level": 136,
+        "unit": "Km",
+        "format": 1
+    },
+    {
+        "question": "500 000 mètres carré = combien d'hectares?",
+        "answer": 50,
+        "jokermini": 5,
+        "jokermaxi": 50,
+        "level": 137,
+        "format": 0
+    },
+    {
+        "question": "Nombre de marches de la Tour Eiffel",
+        "answer": 1665,
+        "jokermini": 1660,
+        "jokermaxi": 1670,
+        "level": 138,
+        "format": 1
+    },
+    {
+        "question": "Année de sortie de la Volkswagen Golf",
+        "answer": 1974,
+        "jokermini": 1970,
+        "jokermaxi": 1975,
+        "level": 139,
+        "format": 0
+    },
+    {
+        "question": "Département: Isère (Grenoble)",
+        "answer": 38,
+        "jokermini": 35,
+        "jokermaxi": 40,
+        "level": 140,
+        "format": 0
+    },
+    {
+        "question": "Âge de Jamel Debbouze",
+        "answer": 38,
+        "jokermini": 35,
+        "jokermaxi": 40,
+        "level": 141,
+        "unit": "ans",
+        "format": 0
+    },
+    {
+        "question": "Largeur d'une table de tennis de table",
+        "answer": 152,
+        "jokermini": 150,
+        "jokermaxi": 155,
+        "level": 142,
+        "unit": "cm",
+        "format": 0
+    },
+    {
+        "question": "Année de sortie de la Peugeot 104",
+        "answer": 1972,
+        "jokermini": 1970,
+        "jokermaxi": 1975,
+        "level": 143,
+        "format": 0
+    },
+    {
+        "question": "Poids total de la Tour Eiffel",
+        "answer": 10100,
+        "jokermini": 10090,
+        "jokermaxi": 10105,
+        "level": 144,
+        "unit": "tonnes",
+        "format": 1
+    },
+    {
+        "question": "250 hectares = combien de mètres carré?",
+        "answer": 2500000,
+        "jokermini": 250000,
+        "jokermaxi": 2500000,
+        "level": 145,
+        "format": 1
+    },
+    {
+        "question": "Distance entre Perpignan et Barcelone (par la route)",
+        "answer": 195,
+        "jokermini": 190,
+        "jokermaxi": 200,
+        "level": 146,
+        "unit": "Km",
+        "format": 0
+    },
+    {
+        "question": "Date de sortie du film \"Grease\"",
+        "answer": 1978,
+        "jokermini": 1970,
+        "jokermaxi": 1980,
+        "level": 147,
+        "format": 0
+    },
+    {
+        "question": "Taille de Tony Parker",
+        "answer": 188,
+        "jokermini": 185,
+        "jokermaxi": 195,
+        "level": 148,
+        "unit": "cm",
+        "format": 0
+    },
+    {
+        "question": "Pourcentage d'hommes en France en 2014",
+        "answer": 48,
+        "jokermini": 45,
+        "jokermaxi": 49,
+        "level": 149,
+        "unit": "Pourcent",
+        "format": 0
+    },
+    {
+        "question": "Département: Aveyron (Rodez)",
+        "answer": 12,
+        "jokermini": 10,
+        "jokermaxi": 15,
+        "level": 150,
+        "format": 0
+    },
+    {
+        "question": "Salaire de Zlatan Ibrahimovic annuel (2014)",
+        "answer": 15000000,
+        "jokermini": 14000000,
+        "jokermaxi": 17000000,
+        "level": 151,
+        "unit": "Eur.",
+        "format": 1
+    },
+    {
+        "question": "Âge de Marion Cotillard",
+        "answer": 38,
+        "jokermini": 35,
+        "jokermaxi": 40,
+        "level": 152,
+        "unit": "ans",
+        "format": 0
+    },
+    {
+        "question": "Date de création de TF1",
+        "answer": 1975,
+        "jokermini": 1970,
+        "jokermaxi": 1980,
+        "level": 153,
+        "format": 0
+    },
+    {
+        "question": "1 semaine = combien d'heures?",
+        "answer": 168,
+        "jokermini": 165,
+        "jokermaxi": 170,
+        "level": 154,
+        "format": 0
+    },
+    {
+        "question": "10 000 litres = combien de mètres cube?",
+        "answer": 10,
+        "jokermini": 10,
+        "jokermaxi": 100,
+        "level": 155,
+        "format": 0
+    },
+    {
+        "question": "Département: Var (Toulon)",
+        "answer": 83,
+        "jokermini": 80,
+        "jokermaxi": 85,
+        "level": 156,
+        "format": 0
+    },
+    {
+        "question": "Âge de Daniel Balavoine au moment du décès",
+        "answer": 33,
+        "jokermini": 30,
+        "jokermaxi": 35,
+        "level": 157,
+        "unit": "ans",
+        "format": 0
+    },
+    {
+        "question": "Année de naissance de Zinedine Zidane",
+        "answer": 1972,
+        "jokermini": 1970,
+        "jokermaxi": 1975,
+        "level": 158,
+        "format": 0
+    },
+    {
+        "question": "Longueur d'un terrain de basket-ball",
+        "answer": 28,
+        "jokermini": 25,
+        "jokermaxi": 30,
+        "level": 159,
+        "unit": "m",
+        "format": 0
+    },
+    {
+        "question": "1 jour = combien de secondes?",
+        "answer": 86400,
+        "jokermini": 86300,
+        "jokermaxi": 86500,
+        "level": 160,
+        "format": 1
+    },
+    {
+        "question": "Distance entre Toulouse et Montpellier (par la route)",
+        "answer": 242,
+        "jokermini": 240,
+        "jokermaxi": 250,
+        "level": 161,
+        "unit": "Km",
+        "format": 0
+    },
+    {
+        "question": "Date de sortie du film \"Gladiator\"",
+        "answer": 2000,
+        "jokermini": 1998,
+        "jokermaxi": 2005,
+        "level": 162,
+        "format": 0
+    },
+    {
+        "question": "Taille de François Hollande",
+        "answer": 174,
+        "jokermini": 170,
+        "jokermaxi": 180,
+        "level": 163,
+        "unit": "cm",
+        "format": 0
+    },
+    {
+        "question": "Département: Gironde (Bordeaux)",
+        "answer": 33,
+        "jokermini": 30,
+        "jokermaxi": 35,
+        "level": 164,
+        "format": 0
+    },
+    {
+        "question": "Âge d'Amy Winehouse au moment du décès",
+        "answer": 27,
+        "jokermini": 25,
+        "jokermaxi": 30,
+        "level": 165,
+        "unit": "ans",
+        "format": 0
+    },
+    {
+        "question": "Âge de Rihanna",
+        "answer": 26,
+        "jokermini": 25,
+        "jokermaxi": 30,
+        "level": 166,
+        "unit": "ans",
+        "format": 0
+    },
+    {
+        "question": "Département: Guadeloupe (Basse-Terre)",
+        "answer": 971,
+        "jokermini": 970,
+        "jokermaxi": 975,
+        "level": 167,
+        "format": 0
+    },
+    {
+        "question": "1 semaine = combien de minutes?",
+        "answer": 10080,
+        "jokermini": 10075,
+        "jokermaxi": 10100,
+        "level": 168,
+        "format": 1
+    },
+    {
+        "question": "Âge de Brad Pitt",
+        "answer": 50,
+        "jokermini": 49,
+        "jokermaxi": 55,
+        "level": 169,
+        "unit": "ans",
+        "format": 0
+    },
+    {
+        "question": "Âge de Serge Gainsbourg au moment du décès",
+        "answer": 62,
+        "jokermini": 60,
+        "jokermaxi": 65,
+        "level": 170,
+        "unit": "ans",
+        "format": 0
+    },
+    {
+        "question": "Département: Haute-Garonne (Toulouse)",
+        "answer": 31,
+        "jokermini": 30,
+        "jokermaxi": 35,
+        "level": 171,
+        "format": 0
+    },
+    {
+        "question": "Date de sortie de \"X-Men\"",
+        "answer": 2000,
+        "jokermini": 1995,
+        "jokermaxi": 2002,
+        "level": 172,
+        "format": 0
+    },
+    {
+        "question": "Taille de Tom Cruise",
+        "answer": 170,
+        "jokermini": 162,
+        "jokermaxi": 172,
+        "level": 173,
+        "unit": "cm",
+        "format": 0
+    },
+    {
+        "question": "Année de naissance de David Beckham",
+        "answer": 1975,
+        "jokermini": 1974,
+        "jokermaxi": 1979,
+        "level": 174,
+        "format": 0
+    },
+    {
+        "question": "10 000 decilitres = combien de decimètres cube?",
+        "answer": 1000,
+        "jokermini": 100,
+        "jokermaxi": 1000,
+        "level": 175,
+        "format": 1
+    },
+    {
+        "question": "Distance entre Paris et Amsterdam (par la route)",
+        "answer": 501,
+        "jokermini": 500,
+        "jokermaxi": 510,
+        "level": 176,
+        "unit": "Km",
+        "format": 0
+    },
+    {
+        "question": "Âge de Joe Dassin au moment du décès",
+        "answer": 41,
+        "jokermini": 40,
+        "jokermaxi": 45,
+        "level": 177,
+        "unit": "ans",
+        "format": 0
+    },
+    {
+        "question": "Département: Corrèze (Tulle)",
+        "answer": 19,
+        "jokermini": 15,
+        "jokermaxi": 20,
+        "level": 178,
+        "format": 0
+    },
+    {
+        "question": "Taille de Lionel Messi",
+        "answer": 169,
+        "jokermini": 160,
+        "jokermaxi": 170,
+        "level": 179,
+        "unit": "cm",
+        "format": 0
+    },
+    {
+        "question": "Distance entre Bordeaux et Lyon (par la route)",
+        "answer": 549,
+        "jokermini": 540,
+        "jokermaxi": 550,
+        "level": 180,
+        "unit": "Km",
+        "format": 0
+    },
+    {
+        "question": "250 Kilogrammes = combien de decigrammes?",
+        "answer": 2500000,
+        "jokermini": 250000,
+        "jokermaxi": 2500000,
+        "level": 181,
+        "format": 1
+    },
+    {
+        "question": "Département: La Réunion (Saint-Denis)",
+        "answer": 974,
+        "jokermini": 970,
+        "jokermaxi": 975,
+        "level": 182,
+        "format": 0
+    },
+    {
+        "question": "Taille de Will Smith",
+        "answer": 188,
+        "jokermini": 185,
+        "jokermaxi": 192,
+        "level": 183,
+        "unit": "cm",
+        "format": 0
+    },
+    {
+        "question": "1 année (365j) = combien d'heures?",
+        "answer": 8760,
+        "jokermini": 8750,
+        "jokermaxi": 8770,
+        "level": 184,
+        "format": 1
+    },
+    {
+        "question": "9 X 12 = ?",
+        "answer": 108,
+        "jokermini": 100,
+        "jokermaxi": 110,
+        "level": 185,
+        "format": 0
+    },
+    {
+        "question": "Année de sortie du premier iPhone (Edge)",
+        "answer": 2007,
+        "jokermini": 2005,
+        "jokermaxi": 2010,
+        "level": 186,
+        "format": 0
+    },
+    {
+        "question": "Mariage du prince Charles de Galles et de Diana Spencer",
+        "answer": 1981,
+        "jokermini": 1980,
+        "jokermaxi": 1985,
+        "level": 187,
+        "format": 0
+    },
+    {
+        "question": "Taille de Carla Bruni-Sarkozy",
+        "answer": 175,
+        "jokermini": 174,
+        "jokermaxi": 184,
+        "level": 188,
+        "unit": "cm",
+        "format": 0
+    }
+]

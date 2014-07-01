@@ -1,0 +1,11 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="pad_right_spacing">8dp</dimen>
+
+    <!-- Popups -->
+    <dimen name="popup_width">900dp</dimen>
+    <dimen name="popup_height">400dp</dimen>
+
+</resources>

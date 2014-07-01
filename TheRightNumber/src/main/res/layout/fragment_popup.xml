@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_round_rectangle_pressed">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="This is a popup title"
+        android:gravity="center"/>
+
+    <View
+        android:id="@+id/titleSeparatorView"
+        android:layout_below="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/blue04"/>
+
+    <TextView
+        android:id="@+id/bodyTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleSeparatorView"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:text="body"
+        android:gravity="left|center_vertical"/>
+
+    <LinearLayout
+        android:id="@+id/shareButtonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            style="@style/RedPopupButton"
+            android:id="@+id/popupShareButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/popup_share_btn_text"/>
+
+        <Button
+            style="@style/GreenPopupButton"
+            android:id="@+id/popupContinueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:text="@string/popup_continue_btn_text"/>
+
+        <Button
+            style="@style/PopupButton"
+            android:id="@+id/facebookPageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/popup_facebook_page"
+            android:visibility="gone"/>
+
+        <Button
+            style="@style/PopupButton"
+            android:id="@+id/twitterPageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/popup_twitter_page"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomButtonsLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="30dp">
+
+        <Button
+            style="@style/PopupButton"
+            android:id="@+id/positiveButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="OK"/>
+
+        <Button
+            style="@style/PopupButton"
+            android:id="@+id/negativeButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="Cancel"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/noMoreLivesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        android:layout_below="@+id/bodyTextView">
+
+        <TextView
+            android:id="@+id/countdownTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="30sp"
+            android:textColor="@color/blue04"
+            android:text="30:00"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/inappsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/countdownTextView"/>
+
+        <TextView
+            android:id="@+id/noAdPackTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/inappsLayout"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:text="@string/no_ad_packs"/>
+
+        <ProgressBar
+            android:id="@+id/progressRing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
