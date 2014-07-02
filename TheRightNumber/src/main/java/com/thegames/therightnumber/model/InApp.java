@@ -11,6 +11,8 @@ public class InApp {
 
     private String name;
     private String cost;
+    private String belowText;
+    private String sku;
 
     public InApp() {}
 
@@ -22,9 +24,10 @@ public class InApp {
         }
     }
 
-    public InApp(String lifeCount, String cost) {
+    public InApp(String lifeCount, String cost, String belowText) {
         this.name = lifeCount;
         this.cost = cost;
+        this.belowText = belowText;
     }
 
     public String getName() {
@@ -41,5 +44,21 @@ public class InApp {
 
     public void setCost(String cost) {
         this.cost = cost;
+    }
+
+    public String getBelowText() {
+        return belowText;
+    }
+
+    public void setBelowText(String belowText) {
+        this.belowText = belowText;
+    }
+
+    public String getSku() {
+        return sku;
+    }
+
+    public void setSku(String sku) {
+        this.sku = sku;
     }
 }

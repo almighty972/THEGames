@@ -55,5 +55,9 @@
     <string name="no_ad_packs">The 1500 and 5000 packs remove the ads</string>
     <string name="more_lives">The 1500 and 5000 packs remove the ads</string>
     <string name="free_inapp">FREE</string>
+    <string name="inapp_25_below_text">Vidéo</string>
+    <string name="inapp_200_below_text">+vendu</string>
+    <string name="inapp_1500_below_text">-30%</string>
+    <string name="inapp_5000_below_text">-60%</string>
 
 </resources>

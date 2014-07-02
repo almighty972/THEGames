@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_width="92dp"
+    android:layout_height="122dp">
 
     <LinearLayout
         android:id="@+id/inappRootLayout"
@@ -15,8 +15,7 @@
         android:paddingTop="15dp"
         android:paddingBottom="10dp"
         android:background="@color/yellow01"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp">
+        android:layout_marginRight="15dp">
 
         <TextView
             android:id="@+id/inappLifeCountTextView"
@@ -46,8 +45,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="+vendu"
+        android:textSize="10sp"
+        android:textColor="@color/white"
         android:layout_below="@+id/inappRootLayout"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="4dp"/>
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        />
 
 </RelativeLayout>

@@ -14,6 +14,7 @@ import com.thegames.therightnumber.R;
 import com.thegames.therightnumber.billing.InAppProductsFragments;
 import com.thegames.therightnumber.billing.Inventory;
 import com.thegames.therightnumber.interfaces.BillingListener;
+import com.thegames.therightnumber.interfaces.InAppViewListener;
 import com.thegames.therightnumber.managers.BillingManager;
 import com.thegames.therightnumber.managers.GameManager;
 import com.thegames.therightnumber.model.InApp;
@@ -24,7 +25,7 @@ import java.lang.ref.WeakReference;
 /**
  * Created by gyljean-lambert on 25/05/2014.
  */
-public class NoMoreLivesPopup extends Popup implements BillingListener {
+public class NoMoreLivesPopup extends Popup implements BillingListener, InAppViewListener {
 
     private CountDownTimer mCountDownTimer;
     private long mMillisUntilFinished;
@@ -143,21 +144,28 @@ public class NoMoreLivesPopup extends Popup implements BillingListener {
             InApp inapp = null;
 
             // adding free inapp
-            inapp = new InApp("25", mActivity.getString(R.string.free_inapp));
+            inapp = new InApp("25", mActivity.getString(R.string.free_inapp), mActivity.getString(R.string.inapp_25_below_text));
+            inapp.setSku(Constants.SKU_AD_FREE);
             addInappView(inapp);
 
             // adding other inapp
             if (inventory != null) {
                 if (inventory.hasDetails(Constants.SKU_PACK_200_VIES)) {
                     inapp = new InApp(inventory.getSkuDetails(Constants.SKU_PACK_200_VIES));
+                    inapp.setBelowText(mActivity.getString(R.string.inapp_200_below_text));
+                    inapp.setSku(Constants.SKU_PACK_200_VIES);
                     addInappView(inapp);
                 }
                 if (inventory.hasDetails(Constants.SKU_PACK_1500_VIES)) {
                     inapp = new InApp(inventory.getSkuDetails(Constants.SKU_PACK_1500_VIES));
+                    inapp.setBelowText(mActivity.getString(R.string.inapp_1500_below_text));
+                    inapp.setSku(Constants.SKU_PACK_1500_VIES);
                     addInappView(inapp);
                 }
                 if (inventory.hasDetails(Constants.SKU_PACK_5000_VIES)) {
                     inapp = new InApp(inventory.getSkuDetails(Constants.SKU_PACK_5000_VIES));
+                    inapp.setBelowText(mActivity.getString(R.string.inapp_5000_below_text));
+                    inapp.setSku(Constants.SKU_PACK_5000_VIES);
                     addInappView(inapp);
                 }
 
@@ -168,7 +176,16 @@ public class NoMoreLivesPopup extends Popup implements BillingListener {
 
     private void addInappView(InApp inApp) {
         if(mInappsLayout != null) {
-            mInappsLayout.addView(new InAppView(getActivity(), inApp));
+            InAppView inAppView = new InAppView(getActivity(), inApp);
+            inAppView.setInAppListener(this);
+//            inAppView.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,
+//                    LinearLayout.LayoutParams.WRAP_CONTENT));
+            mInappsLayout.addView(inAppView);
         }
+    }
+
+    @Override
+    public void onSelectInApp(String sku) {
+        Log.d("", "==> sku: " + sku);
     }
 }

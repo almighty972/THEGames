@@ -55,7 +55,7 @@ public class InAppProductsFragments extends AbstractFragment implements BillingL
         InApp inapp = null;
 
         // adding free inapp
-        inapp = new InApp("25", getString(R.string.free_inapp));
+        inapp = new InApp("25", getString(R.string.free_inapp), "");
         addInappView(inapp);
 
         // adding other inapp

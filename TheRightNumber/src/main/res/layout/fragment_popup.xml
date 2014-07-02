@@ -127,7 +127,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:visibility="gone"
+        android:visibility="visible"
         android:layout_below="@+id/bodyTextView">
 
         <TextView
@@ -145,19 +145,23 @@
         <LinearLayout
             android:orientation="horizontal"
             android:id="@+id/inappsLayout"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
             android:gravity="center"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
+            android:paddingLeft="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_above="@+id/noAdPackTextView"
             android:layout_below="@+id/countdownTextView"/>
 
         <TextView
             android:id="@+id/noAdPackTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_below="@+id/inappsLayout"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:textColor="@color/white"
             android:text="@string/no_ad_packs"/>
