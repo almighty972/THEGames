@@ -22,4 +22,11 @@ public class QuestionsDBHelper extends DatabaseHelper<Question> {
                 .list();
     }
 
+    public List<Question> fetchPlayedOnly() {
+        return Select.from(Question.class)
+                .where(Condition.prop("played").eq("true"))
+                .orderBy("level ASC")
+                .list();
+    }
+
 }

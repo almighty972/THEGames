@@ -13,8 +13,10 @@ import com.thegames.therightnumber.R;
 import com.thegames.therightnumber.helpers.FileHelper;
 import com.thegames.therightnumber.helpers.QuestionsDBHelper;
 import com.thegames.therightnumber.interfaces.GameplayListener;
+import com.thegames.therightnumber.interfaces.HomeListener;
 import com.thegames.therightnumber.model.Question;
 import com.thegames.therightnumber.popups.Popup;
+import com.thegames.therightnumber.uigame.GameActivity;
 import com.thegames.therightnumber.uigame.GameOver;
 import com.thegames.therightnumber.uigame.Joker;
 import com.thegames.therightnumber.uigame.PopupAction;
@@ -37,6 +39,7 @@ public class GameManager {
     private Context mAppContext;
     private SharedPreferences mSharedPreferences;
     private WeakReference<GameplayListener> mWeakGameplayListener = new WeakReference<GameplayListener>(null);
+    private WeakReference<HomeListener> mWeakHomeListener = new WeakReference<HomeListener>(null);
 
     private List<Question> mQuestions;
     private List<String> mAnswersHistory = new ArrayList<String>();;
@@ -67,6 +70,12 @@ public class GameManager {
         }
     }
 
+    public void setHomeListener(final HomeListener listener) {
+        if(listener != null) {
+            mWeakHomeListener = new WeakReference<HomeListener>(listener);
+        }
+    }
+
     /*
      * SHARED PREFERENCES METHODS
      */
@@ -92,6 +101,22 @@ public class GameManager {
 
     public long getLongPref(String pref) {
         return mSharedPreferences.getLong(pref, -1);
+    }
+
+    public void saveBooleanPref(String pref, boolean value) {
+        mSharedPreferences.edit().putBoolean(pref, value).commit();
+    }
+
+    public boolean getBooleanPref(String pref, boolean defaultValue) {
+        return mSharedPreferences.getBoolean(pref, defaultValue);
+    }
+
+    public void saveStringPref(String pref, String value) {
+        mSharedPreferences.edit().putString(pref, value).commit();
+    }
+
+    public String getStringPref(String pref) {
+        return mSharedPreferences.getString(pref, null);
     }
 
 
@@ -171,6 +196,37 @@ public class GameManager {
         if(mScore == -1) { // if this is the first application launch, init the user score to INITIAL_SCORE
             mScore = Constants.INITIAL_SCORE;
             saveIntPref(Constants.PREFS_SCORE, mScore);
+        }
+    }
+
+    public void addBonusLives(String sku) {
+
+            if (sku.equals(Constants.SKU_PACK_200_VIES)) {
+                mScore += 200;
+            } else if (sku.equals(Constants.SKU_PACK_1500_VIES)) {
+                mScore += 1500;
+            } else if (sku.equals(Constants.SKU_PACK_5000_VIES)) {
+                mScore += 5000;
+            } else if (sku.equals(Constants.SKU_FREE_INAPP_VIDEO)) {
+                mScore += 25;
+            } else if (sku.equals(Constants.SKU_PREMIUM_NO_AD)) {
+                mScore += 50;
+            } else if (sku.equals(Constants.SKU_COUNTDOWN)) {
+                mScore += 50;
+            }
+
+            saveIntPref(Constants.PREFS_SCORE, mScore);
+        if(mWeakGameplayListener != null && mWeakGameplayListener.get() != null &&
+                mWeakGameplayListener.get() instanceof GameActivity.GameFragment) {
+            mWeakGameplayListener.get().onUpdateLivesScore(mScore);
+        }
+    }
+
+    public void debugSetLowLive() {
+        mScore = 1;
+        saveIntPref(Constants.PREFS_SCORE, mScore);
+        if(mWeakGameplayListener != null && mWeakGameplayListener.get() != null) {
+            mWeakGameplayListener.get().onUpdateLivesScore(mScore);
         }
     }
 
@@ -275,25 +331,13 @@ public class GameManager {
         return text;
     }
 
-
-//    public boolean isUserAnswerToloerated(String answer) {
-//        boolean isTolerated = false;
-//        if(mCurrentQuestion != null &&
-//                !TextUtils.isEmpty(answer) &&
-//                !TextUtils.isEmpty(mCurrentQuestion.getAnswer())) {
-//
-//            long tolerance = mCurrentQuestion.getTolerance();
-//            long userAnswer = Long.valueOf(answer);
-//            long goodAnswer = Long.valueOf(mCurrentQuestion.getAnswer());
-//
-//            long result = (goodAnswer * tolerance) / 100;
-//            if(userAnswer >= (goodAnswer - result) &&
-//                    userAnswer <= (goodAnswer + result)) {
-//                isTolerated = true; // bingo, lucky user...
-//            }
-//        }
-//        return isTolerated;
-//    }
+    public void triggerInterstitialWithCounter() {
+        List<Question> questions = GameManager.getInstance().getPlayedQuestions();
+        Log.e(TAG, "===> NB PLAYED QUESTIONS: " + questions.size());
+        if(!questions.isEmpty() && (questions.size() % 5 == 0) ) {
+            AdManager.getInstance().showInterstitial();
+        }
+    }
 
 
     public <T extends Popup> void handlePopupAction(T popup, PopupAction popupAction) {
@@ -334,6 +378,11 @@ public class GameManager {
                 case VISITE_TWITTER_PAGE:
                     if(mWeakGameplayListener != null && mWeakGameplayListener.get() != null) {
                         mWeakGameplayListener.get().onClickVisitTwitterPage();
+                    }
+                    break;
+                case BUY_PREMIUM_INAPP:
+                    if(mWeakHomeListener != null && mWeakHomeListener.get() != null) {
+                        mWeakHomeListener.get().onClickBuyPremiumInapp();
                     }
                     break;
                 default:
@@ -399,6 +448,10 @@ public class GameManager {
 
     public List<Question> getUnplayedQuestions() {
         return mQuestionDbHelper.fetchUnplayedOnly();
+    }
+
+    public List<Question> getPlayedQuestions() {
+        return mQuestionDbHelper.fetchPlayedOnly();
     }
 
 

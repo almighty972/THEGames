@@ -63,5 +63,6 @@ public class BingoPopup extends Popup {
         mBodyTextView.setGravity(Gravity.CENTER);
         mShareButtonsLayout.setVisibility(View.VISIBLE);
         mBottomButtonsLayout.setVisibility(View.GONE);
+        mNoMoreLivesLayout.setVisibility(View.GONE);
     }
 }

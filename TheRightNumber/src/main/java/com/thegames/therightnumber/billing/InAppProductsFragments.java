@@ -15,6 +15,8 @@ import com.thegames.therightnumber.managers.BillingManager;
 import com.thegames.therightnumber.model.InApp;
 import com.thegames.therightnumber.views.InAppView;
 
+import java.util.HashMap;
+
 /**
  * Created by gyljean-lambert on 21/06/2014.
  */
@@ -50,6 +52,11 @@ public class InAppProductsFragments extends AbstractFragment implements BillingL
     }
 
     @Override
+    public void onIabSetupFinished() {
+
+    }
+
+    @Override
     public void onProductsReceived(Inventory inventory) {
         mProgressRing.setVisibility(View.GONE);
         InApp inapp = null;
@@ -71,6 +78,16 @@ public class InAppProductsFragments extends AbstractFragment implements BillingL
                 addInappView(inapp);
             }
         }
+    }
+
+    @Override
+    public void onQueryPurchasedItems(HashMap<String, Purchase> itemsMap) {
+
+    }
+
+    @Override
+    public void onConsumePurchasedItems(boolean consumeSuccess, Purchase purchase) {
+
     }
 
     private void addInappView(InApp inApp) {

@@ -4,34 +4,46 @@ package com.thegames.therightnumber.popups;
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.Handler;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 
+import com.jirbo.adcolony.AdColonyAd;
+import com.jirbo.adcolony.AdColonyAdAvailabilityListener;
+import com.jirbo.adcolony.AdColonyAdListener;
+import com.jirbo.adcolony.AdColonyVideoAd;
 import com.thegames.therightnumber.AbstractActivity;
 import com.thegames.therightnumber.Constants;
 import com.thegames.therightnumber.R;
-import com.thegames.therightnumber.billing.InAppProductsFragments;
 import com.thegames.therightnumber.billing.Inventory;
+import com.thegames.therightnumber.billing.Purchase;
 import com.thegames.therightnumber.interfaces.BillingListener;
 import com.thegames.therightnumber.interfaces.InAppViewListener;
 import com.thegames.therightnumber.managers.BillingManager;
 import com.thegames.therightnumber.managers.GameManager;
 import com.thegames.therightnumber.model.InApp;
+import com.thegames.therightnumber.uigame.GameActivity;
 import com.thegames.therightnumber.views.InAppView;
 
 import java.lang.ref.WeakReference;
+import java.util.HashMap;
 
 /**
  * Created by gyljean-lambert on 25/05/2014.
  */
-public class NoMoreLivesPopup extends Popup implements BillingListener, InAppViewListener {
+public class NoMoreLivesPopup extends Popup implements BillingListener, InAppViewListener, AdColonyAdListener, AdColonyAdAvailabilityListener {
 
     private CountDownTimer mCountDownTimer;
     private long mMillisUntilFinished;
     private long mLastStartedTime;
-    private InAppProductsFragments mInAppProductsFragments;
     private AbstractActivity mActivity;
+
+    private Handler mUiHandler;
+    private boolean mIsCredited;
+    private boolean mVisible;
+    private boolean mTimesUp;
+
 
     /**
      * Create a new instance of MyDialogFragment, providing "num"
@@ -61,11 +73,19 @@ public class NoMoreLivesPopup extends Popup implements BillingListener, InAppVie
         setCancelable(false);
 
         mPopupReference = new WeakReference<Popup>(this);
+        mUiHandler = new Handler();
+        mIsCredited = false;
     }
 
     @Override
     public void onResume() {
         super.onResume();
+        mVisible = true;
+        if(!mTimesUp) {
+            startOrResumeCountDown();
+        } else {
+            creditLivesAfterCountdown();
+        }
     }
 
     @Override
@@ -81,6 +101,7 @@ public class NoMoreLivesPopup extends Popup implements BillingListener, InAppVie
     @Override
     public void onPause() {
         super.onPause();
+        mVisible = false;
         if(mCountDownTimer != null) {
             mCountDownTimer.cancel();
         }
@@ -122,19 +143,34 @@ public class NoMoreLivesPopup extends Popup implements BillingListener, InAppVie
                 }
 
                 public void onFinish() {
+                    mTimesUp = true;
                     if(mCountdownTextView != null) {
                         mCountdownTextView.setText("00:00");
                     }
-                    GameManager.getInstance().saveLongPref(Constants.PREFS_COUNTDOWN_TIME, 0);
-                    GameManager.getInstance().saveLongPref(Constants.PREFS_COUNTDOWN_STARTED_TIME, 0);
-                    /// TODO notify listener to bring back game view and add 50 free lives
+                    creditLivesAfterCountdown();
                 }
             };
             mCountDownTimer.start();
         } else {
-//            dismiss();
-            /// TODO notify listener to bring back game view and add 50 free lives
+            creditLivesAfterCountdown();
         }
+    }
+
+    private void creditLivesAfterCountdown() {
+        GameManager.getInstance().saveLongPref(Constants.PREFS_COUNTDOWN_TIME, 0);
+        GameManager.getInstance().saveLongPref(Constants.PREFS_COUNTDOWN_STARTED_TIME, 0);
+        if(!mIsCredited) {
+            mIsCredited = true;
+            GameManager.getInstance().addBonusLives(Constants.SKU_COUNTDOWN);
+        }
+        if(mVisible) {
+            dismiss();
+        }
+    }
+
+    @Override
+    public void onIabSetupFinished() {
+
     }
 
     @Override
@@ -144,8 +180,8 @@ public class NoMoreLivesPopup extends Popup implements BillingListener, InAppVie
             InApp inapp = null;
 
             // adding free inapp
-            inapp = new InApp("25", mActivity.getString(R.string.free_inapp), mActivity.getString(R.string.inapp_25_below_text));
-            inapp.setSku(Constants.SKU_AD_FREE);
+            inapp = new InApp(String.valueOf(Constants.FREE_IN_APP_VIDEO_LIVES_COUNT), mActivity.getString(R.string.free_inapp), mActivity.getString(R.string.inapp_25_below_text));
+            inapp.setSku(Constants.SKU_FREE_INAPP_VIDEO);
             addInappView(inapp);
 
             // adding other inapp
@@ -174,12 +210,17 @@ public class NoMoreLivesPopup extends Popup implements BillingListener, InAppVie
         }
     }
 
+    @Override
+    public void onQueryPurchasedItems(HashMap<String, Purchase> itemsMap) { }
+
+    @Override
+    public void onConsumePurchasedItems(boolean consumeSuccess, Purchase purchase) { }
+
+
     private void addInappView(InApp inApp) {
         if(mInappsLayout != null) {
             InAppView inAppView = new InAppView(getActivity(), inApp);
             inAppView.setInAppListener(this);
-//            inAppView.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,
-//                    LinearLayout.LayoutParams.WRAP_CONTENT));
             mInappsLayout.addView(inAppView);
         }
     }
@@ -187,5 +228,51 @@ public class NoMoreLivesPopup extends Popup implements BillingListener, InAppVie
     @Override
     public void onSelectInApp(String sku) {
         Log.d("", "==> sku: " + sku);
+        if(sku.equals(Constants.SKU_FREE_INAPP_VIDEO)) { // free adColony video to get 25 lives
+            AdColonyVideoAd ad = new AdColonyVideoAd( getString(R.string.testZoneId) ).withListener(this);
+            ad.show();
+        } else {
+            BillingManager.getInstance().setCurrentActivity(mActivity);
+            GameActivity.GameFragment gameFragment = ((GameActivity) mActivity).getGameFragment();
+            BillingManager.getInstance().setBillingListener(gameFragment);
+            BillingManager.getInstance().purchaseInApp(sku);
+            dismiss();
+        }
+
+    }
+
+    @Override
+    public void onAdColonyAdAvailabilityChange(boolean available, String zoneId) {
+        if (available) {
+            Log.d("AdColony", "onAdColonyAdAvailabilityChange");
+//            AdColonyVideoAd ad = new AdColonyVideoAd( getString(R.string.testZoneId) ).withListener(this);
+//            ad.show();
+        }
+    }
+
+    @Override
+    public void onAdColonyAdAttemptFinished(AdColonyAd adColonyAd) {
+        // You can ping the AdColonyAd object here for more information:
+        // ad.shown() - returns true if the ad was successfully shown.
+        // ad.notShown() - returns true if the ad was not shown at all (i.e. if onAdColonyAdStarted was never triggered)
+        // ad.skipped() - returns true if the ad was skipped due to an interval play setting
+        // ad.canceled() - returns true if the ad was cancelled (either programmatically or by the user)
+        // ad.noFill() - returns true if the ad was not shown due to no ad fill.
+
+        Log.d("AdColony", "onAdColonyAdAttemptFinished");
+        if(adColonyAd != null && adColonyAd.shown()) {
+            GameManager.getInstance().addBonusLives(Constants.SKU_FREE_INAPP_VIDEO);
+            mUiHandler.post(new Runnable() {
+                @Override
+                public void run() {
+                    dismiss();
+                }
+            });
+        }
+    }
+
+    @Override
+    public void onAdColonyAdStarted(AdColonyAd adColonyAd) {
+        Log.d("AdColony", "onAdColonyAdStarted");
     }
 }

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- AdColony -->
+    <string name="adColonyAppId">appdbc42b5fbb49467595</string>
+    <string name="testZoneId">vzee4d0fb97e3941ec81</string>
+
+    <!-- AdMob -->
+    <string name="admob_id">ca-app-pub-1332160865070772/1719336444</string>
+    <string name="admob_interstitial_id">ca-app-pub-1332160865070772/6030380845</string>
+
+    <!-- Facebook -->
+    <string name="app_id">245546865638469</string>
+
+</resources>

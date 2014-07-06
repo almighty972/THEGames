@@ -10,4 +10,5 @@ public interface PopupDialogListener {
 
     <T extends Popup> void onClickPopupButton(T popup, PopupAction popupAction);
     void onCountdownFinished();
+    void onDismiss();
 }

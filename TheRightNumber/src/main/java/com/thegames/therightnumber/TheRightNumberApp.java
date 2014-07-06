@@ -1,7 +1,9 @@
 package com.thegames.therightnumber;
 
 import com.orm.SugarApp;
+import com.thegames.therightnumber.managers.AdManager;
 import com.thegames.therightnumber.managers.BillingManager;
+import com.thegames.therightnumber.managers.FacebookManager;
 import com.thegames.therightnumber.managers.GameManager;
 
 /**
@@ -17,6 +19,8 @@ public class TheRightNumberApp extends SugarApp {
     }
 
     private void initDatas() {
+        AdManager.getInstance().setAppContext(this);
+        FacebookManager.getInstance().setAppContext(this);
         BillingManager.getInstance().setAppContext(this);
         GameManager.getInstance().setAppContext(this);
         GameManager.getInstance().populateDatabase();

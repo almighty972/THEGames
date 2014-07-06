@@ -1,5 +1,6 @@
 <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:ads="http://schemas.android.com/apk/res-auto"
+xmlns:switchpref="http://schemas.android.com/apk/res-auto"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:id="@+id/drawer_layout"
@@ -42,13 +43,74 @@ android:background="@drawable/background">
                 android:textStyle="bold"
                 android:id="@+id/textView" />
 
-            <ImageButton
+            <Button
+                style="@style/GreenPopupButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/playBtn"
-                android:src="@drawable/play"
-                android:background="@null"
+                android:text="@string/play"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
                 android:layout_centerInParent="true" />
+
+
+            <Button
+                style="@style/PopupButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fbRecommendButton"
+                android:text="F"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@+id/playBtn"/>
+
+            <Button
+                style="@style/PopupButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/twitterRecommendButton"
+                android:text="T"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/playBtn"/>
+
+            <Button
+                style="@style/PopupButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mailRecommendButton"
+                android:text="M"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/playBtn"/>
+
+            <LinearLayout
+                android:id="@+id/adPremiumLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/adView"
+                android:gravity="center"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ad"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"/>
+
+                <org.jraf.android.backport.switchwidget.Switch
+                    android:id="@+id/adSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    switchpref:switchTextOff="@string/ad_switch_off"
+                    switchpref:switchTextOn="@string/ad_switch_on"/>
+
+
+            </LinearLayout>
+
 
             <com.google.android.gms.ads.AdView
                 android:id="@+id/adView"

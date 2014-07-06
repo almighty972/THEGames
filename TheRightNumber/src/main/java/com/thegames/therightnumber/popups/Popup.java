@@ -27,14 +27,14 @@ public class Popup extends DialogFragment implements View.OnClickListener {
     protected WeakReference<PopupDialogListener> mWeakPopupListener = new WeakReference<PopupDialogListener>(null);
 
     protected Button mPositiveButton, mNegativeButton, mPopupContinueButton, mPopupShareButton,
-                    mFacebookPageButton, mTwitterPageButton;
+                    mFacebookPageButton, mTwitterPageButton, mBuyPremiumInAppButton;
     protected TextView mTitleTextView, mBodyTextView, mCountdownTextView;
     protected LinearLayout mBottomButtonsLayout, mShareButtonsLayout, mInappsLayout;
-    protected RelativeLayout mNoMoreLivesLayout;
+    protected RelativeLayout mNoMoreLivesLayout, mRemoveAdLayout;
     protected ProgressBar mProgressRing;
 
     protected PopupAction mPositiveAction, mNegativeAction, mShareAction, mContinueAction,
-                            mFacebookPageAction, mTwitterPageAction;
+                            mFacebookPageAction, mTwitterPageAction, mBuyPremiumInappAction;
     protected String mTitle, mBody;
 
     protected WeakReference<Popup> mPopupReference;
@@ -98,11 +98,14 @@ public class Popup extends DialogFragment implements View.OnClickListener {
         mFacebookPageButton.setOnClickListener(this);
         mTwitterPageButton = (Button) v.findViewById(R.id.twitterPageButton);
         mTwitterPageButton.setOnClickListener(this);
+        mBuyPremiumInAppButton = (Button) v.findViewById(R.id.buyPremiumInappButton);
+        mBuyPremiumInAppButton.setOnClickListener(this);
 
         mBottomButtonsLayout = (LinearLayout) v.findViewById(R.id.bottomButtonsLayout);
         mShareButtonsLayout = (LinearLayout) v.findViewById(R.id.shareButtonsLayout);
         mInappsLayout = (LinearLayout) v.findViewById(R.id.inappsLayout);
         mNoMoreLivesLayout = (RelativeLayout) v.findViewById(R.id.noMoreLivesLayout);
+        mRemoveAdLayout = (RelativeLayout) v.findViewById(R.id.removeAdLayout);
         mShareButtonsLayout.setVisibility(View.GONE);
         mProgressRing = (ProgressBar) v.findViewById(R.id.progressRing);
 
@@ -137,6 +140,8 @@ public class Popup extends DialogFragment implements View.OnClickListener {
             if (v == mFacebookPageButton) {  mWeakPopupListener.get().onClickPopupButton(mPopupReference.get(), mFacebookPageAction); }
 
             if (v == mTwitterPageButton) {  mWeakPopupListener.get().onClickPopupButton(mPopupReference.get(), mTwitterPageAction); }
+
+            if (v == mBuyPremiumInAppButton) {  mWeakPopupListener.get().onClickPopupButton(mPopupReference.get(), mBuyPremiumInappAction); }
         }
     }
 }

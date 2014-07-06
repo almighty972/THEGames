@@ -12,5 +12,11 @@ buildscript {
 allprojects {
     repositories {
         mavenCentral()
+        maven {
+            url "http://mente.github.io/facebook-api-android-aar"
+        }
+        maven {
+            url "http://JRAF.org/static/maven/2"
+        }
     }
 }

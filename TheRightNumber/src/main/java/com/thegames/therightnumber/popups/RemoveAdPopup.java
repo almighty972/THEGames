@@ -1,8 +1,8 @@
 package com.thegames.therightnumber.popups;
 
 
+import android.content.DialogInterface;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.View;
 
 import com.thegames.therightnumber.uigame.PopupAction;
@@ -12,14 +12,14 @@ import java.lang.ref.WeakReference;
 /**
  * Created by gyljean-lambert on 25/05/2014.
  */
-public class LevelsDonePopup extends Popup {
+public class RemoveAdPopup extends Popup {
 
     /**
      * Create a new instance of MyDialogFragment, providing "num"
      * as an argument.
      */
-    public static LevelsDonePopup newInstance(String title, String body) {
-        LevelsDonePopup f = new LevelsDonePopup();
+    public static RemoveAdPopup newInstance(String title, String body) {
+        RemoveAdPopup f = new RemoveAdPopup();
 
         // Supply num input as an argument.
         Bundle args = new Bundle();
@@ -39,25 +39,28 @@ public class LevelsDonePopup extends Popup {
         mTitle = getArguments().getString("title");
         mBody = getArguments().getString("body");
 
-        mShareAction = PopupAction.SHARE_ALL_LEVELS_DONE;
-        mFacebookPageAction = PopupAction.VISIT_FACEBOOK_PAGE;
-        mTwitterPageAction = PopupAction.VISITE_TWITTER_PAGE;
-
-        setCancelable(false);
+        mBuyPremiumInappAction = PopupAction.BUY_PREMIUM_INAPP;
 
         mPopupReference = new WeakReference<Popup>(this);
+
+        setCancelable(true);
+    }
+
+    @Override
+    public void onDismiss(DialogInterface dialog) {
+        super.onDismiss(dialog);
+        if(mWeakPopupListener != null && mWeakPopupListener.get() != null) {
+            mWeakPopupListener.get().onDismiss();
+        }
     }
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        mBodyTextView.setGravity(Gravity.CENTER);
-        mShareButtonsLayout.setVisibility(View.VISIBLE);
-        mFacebookPageButton.setVisibility(View.VISIBLE);
-        mTwitterPageButton.setVisibility(View.VISIBLE);
-        mPopupContinueButton.setVisibility(View.GONE);
+        mBodyTextView.setVisibility(View.GONE);
+        mShareButtonsLayout.setVisibility(View.GONE);
         mBottomButtonsLayout.setVisibility(View.GONE);
-        mNoMoreLivesLayout.setVisibility(View.GONE);
+        mRemoveAdLayout.setVisibility(View.VISIBLE);
     }
 }

@@ -9,6 +9,7 @@ import android.view.View;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.thegames.therightnumber.managers.GameManager;
 import com.thegames.therightnumber.popups.Popup;
 
 /**
@@ -25,8 +26,11 @@ public abstract class AbstractFragment extends Fragment {
         // Recherchez AdView comme ressource et chargez une demande.
         mAdView = (AdView)view.findViewById(R.id.adView);
         if(mAdView != null) {
-            AdRequest adRequest = new AdRequest.Builder().addTestDevice("87ABE0391AFEE440EFC081DF3EB77D4E").build();
-            mAdView.loadAd(adRequest);
+            boolean mIsUserPremium = GameManager.getInstance().getBooleanPref(Constants.PREFS_USER_IS_PREMIUM, false);
+            if(!mIsUserPremium) {
+                AdRequest adRequest = new AdRequest.Builder().addTestDevice("87ABE0391AFEE440EFC081DF3EB77D4E").build();
+                mAdView.loadAd(adRequest);
+            }
         }
     }
 

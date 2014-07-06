@@ -109,7 +109,7 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="5dp"
             android:layout_weight="1"
-            android:text="OK"/>
+            android:text="@string/ok"/>
 
         <Button
             style="@style/PopupButton"
@@ -118,7 +118,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_weight="1"
-            android:text="Cancel"/>
+            android:text="@string/cancel"/>
 
     </LinearLayout>
 
@@ -127,7 +127,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:visibility="visible"
+        android:visibility="gone"
         android:layout_below="@+id/bodyTextView">
 
         <TextView
@@ -171,6 +171,54 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/removeAdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        android:layout_below="@+id/bodyTextView">
+
+        <TextView
+            android:id="@+id/option1TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="@string/popup_remove_ad_option_one"/>
+
+        <TextView
+            android:id="@+id/option2TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="40dp"
+            android:layout_below="@+id/option1TextView"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="@string/popup_remove_ad_option_two"/>
+
+        <Button
+            style="@style/PopupButton"
+            android:id="@+id/buyPremiumInappButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_weight="1"
+            android:text="@string/ad_premium_fare"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"/>
 
     </RelativeLayout>
 
